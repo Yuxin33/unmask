@@ -1,4 +1,4 @@
-# UnMask: Adversarial Detection and Defense in Deep Learning Through Building-Block Knowledge Extraction
+# UnMask: Adversarial Detection and Defense in Deep Learning Through Robust Feature Alignment
 
 ### Overview:
 
