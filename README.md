@@ -1,19 +1,24 @@
 # UnMask: Adversarial Detection and Defense in Deep Learning Through Robust Feature Alignment
 
-## Running Experiments
+## Experiments
 ### Experiment environment：
 Intel Core i7-5820K 3.3 GHz 12 cores
+
 Geforce Titan X
+
 64 GByte main memory
+
 Ubuntu 16.04 LTS 64-bit
 ### Running the code：
 1. Bulid a "data" floder in the main code directory, and put the download dataset 'unmask' into 'data'.
+
 2. Create a virtual Python environment 'unmask-rest'by :
 ```
 conda env create -f environment.yml
 ```
 3. Run the main.py
-### Run Experiments
+### Running Experiments
+There are model K and model M in this project.
 
 
 
