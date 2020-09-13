@@ -104,7 +104,7 @@ class AdversarialCompression:
 
         if self.args['device'] == torch.device('cuda'):
             model = model.cuda()
-
+        #四种攻击方法
         epsilons = {'pgd_linf': [8.0, 16.0],
                     'pgd_l2': [300.0, 600.0],
                     'mia_linf': [8.0, 16.0],
