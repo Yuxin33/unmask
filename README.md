@@ -17,8 +17,26 @@ Ubuntu 16.04 LTS 64-bit
 conda env create -f environment.yml
 ```
 3. Run the main.py
+#### Posiible problems
+tensorflow.python.framework.errors_impl.CancelledError: Session has been closed.
+
+May useful links:https://www.gitmemory.com/issue/GoogleCloudPlatform/cloudml-samples/331/501913732
 ### Running Experiments
 There are model K and model M in this project.
+### Related works by authors
+
+Extracting Knowledge For Adversarial Detection and Defense in Deep Learning.
+https://poloclub.github.io/polochau/papers/19-kdd-unmask.pdf
+
+Another implementation by JPEG Compression.
+https://arxiv.org/pdf/1802.06816.pdf
+
+AI-infused security: Robust defense by bridging theory and practice.
+https://smartech.gatech.edu/handle/1853/62296
+
+An introduction of Unmask:
+https://smartech.gatech.edu/handle/1853/60900
+
 
 
 
