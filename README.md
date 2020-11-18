@@ -10,9 +10,10 @@ Geforce Titan X
 
 Ubuntu 16.04 LTS 64-bit
 ### Running the code：
-1. Bulid a "data" floder in the main code directory, and put the download dataset 'unmask' into 'data'.
+1. Install anaconda3
+2. Bulid a "data" floder in the main code directory, and put the download dataset 'unmask' into 'data'.
 
-2. Create a virtual Python environment 'unmask-rest'by :
+3. Create a virtual Python environment 'unmask-rest'by :
 ```
 conda env create -f environment.yml
 ```
