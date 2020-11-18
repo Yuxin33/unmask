@@ -17,7 +17,7 @@ Ubuntu 16.04 LTS 64-bit
 conda env create -f environment.yml
 ```
 3. Run the main.py
-#### Posiible problems
+#### Problems and Errors
 tensorflow.python.framework.errors_impl.CancelledError: Session has been closed.
 
 May useful links:https://www.gitmemory.com/issue/GoogleCloudPlatform/cloudml-samples/331/501913732
