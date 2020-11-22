@@ -21,10 +21,12 @@ conda env create -f environment.yml
 d. Run the main.py
 #### 2.2.Problems and Errors
 tensorflow.python.framework.errors_impl.CancelledError: Session has been closed.
+
 May useful links about the description of this error:https://www.gitmemory.com/issue/GoogleCloudPlatform/cloudml-samples/331/501913732
 
 #### 2.3.Updates
 This issue can be solved by modifing the session.py of tensorflow.
+
 The path of session.py is mentioned in the exact error.(tensorflow/tensorflow/python/client/session.py)
 
 #### 2.4.solutions
@@ -58,6 +60,7 @@ https://smartech.gatech.edu/handle/1853/60900
 
 ## Overview:
 Orignial code: https://github.com/safreita1/unmask
+
 Original paper: https://arxiv.org/pdf/2002.09576.pdf
 
 To combat adversarial attacks on deep learning models, we developed **UnMask**, 
