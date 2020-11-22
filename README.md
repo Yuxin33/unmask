@@ -57,6 +57,8 @@ https://smartech.gatech.edu/handle/1853/60900
 
 
 ## Overview:
+Orignial code: https://github.com/safreita1/unmask
+Original paper: https://arxiv.org/pdf/2002.09576.pdf
 
 To combat adversarial attacks on deep learning models, we developed **UnMask**, 
 a knowledge-based adversarial detection and defense framework. 
