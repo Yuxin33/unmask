@@ -20,8 +20,17 @@ conda env create -f environment.yml
 3. Run the main.py
 #### Problems and Errors
 tensorflow.python.framework.errors_impl.CancelledError: Session has been closed.
+May useful links about the description of this error:https://www.gitmemory.com/issue/GoogleCloudPlatform/cloudml-samples/331/501913732
 
-May useful links:https://www.gitmemory.com/issue/GoogleCloudPlatform/cloudml-samples/331/501913732
+# Updates:
+This issue can be solved by modifing the session.py of tensorflow.
+The path of session.py is mentioned in the exact error.(tensorflow/tensorflow/python/client/session.py)
+
+# solutions：
+add “and self._session._session is not None: ” in ‘def __del__(self): ’ in the definition of BaseSession._Callable.__del__:
+
+
+
 ### Running Experiments
 There are model K and model M in this project.
 ### Related works by authors
