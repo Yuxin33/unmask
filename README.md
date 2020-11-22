@@ -1,7 +1,7 @@
 # UnMask: Adversarial Detection and Defense in Deep Learning Through Robust Feature Alignment
 
 ## Experiments
-### Experiment environment：
+### 1.Experiment environment
 Intel Core i7-5820K 3.3 GHz 12 cores
 
 Geforce Titan X
@@ -9,7 +9,8 @@ Geforce Titan X
 64 GByte main memory
 
 Ubuntu 16.04 LTS 64-bit
-### Running the code：
+### 2.Running the code：
+#### 2.1.Main steps
 1. Install anaconda3
 2. Bulid a "data" floder in the main code directory, and put the download dataset 'unmask' into 'data'.
 
@@ -18,22 +19,22 @@ Ubuntu 16.04 LTS 64-bit
 conda env create -f environment.yml
 ```
 3. Run the main.py
-#### Problems and Errors
+#### 2.2.Problems and Errors
 tensorflow.python.framework.errors_impl.CancelledError: Session has been closed.
 May useful links about the description of this error:https://www.gitmemory.com/issue/GoogleCloudPlatform/cloudml-samples/331/501913732
 
-#### Updates:
+#### 2.3.Updates
 This issue can be solved by modifing the session.py of tensorflow.
 The path of session.py is mentioned in the exact error.(tensorflow/tensorflow/python/client/session.py)
 
-#### solutions：
+#### 2.4.solutions
 add “and self._session._session is not None: ” in ‘def __del__(self): ’ in the definition of BaseSession._Callable.__del__:
 
 
 
-### Running Experiments
+### 3.Running Experiments
 There are model K and model M in this project.
-### Related works by authors
+### 4.Related works by authors
 
 Extracting Knowledge For Adversarial Detection and Defense in Deep Learning.
 https://poloclub.github.io/polochau/papers/19-kdd-unmask.pdf
@@ -46,6 +47,10 @@ https://smartech.gatech.edu/handle/1853/62296
 
 An introduction of Unmask:
 https://smartech.gatech.edu/handle/1853/60900
+
+## Improvements
+### 1. Data augmentation of model M
+### 2. Architecture of model M
 
 
 
