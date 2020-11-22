@@ -11,14 +11,14 @@ Geforce Titan X
 Ubuntu 16.04 LTS 64-bit
 ### 2.Running the code：
 #### 2.1.Main steps
-1. Install anaconda3
-2. Bulid a "data" floder in the main code directory, and put the download dataset 'unmask' into 'data'.
+a. Install anaconda3
+b. Bulid a "data" floder in the main code directory, and put the download dataset 'unmask' into 'data'.
 
-3. Create a virtual Python environment 'unmask-rest'by :
+c. Create a virtual Python environment 'unmask-rest'by :
 ```
 conda env create -f environment.yml
 ```
-3. Run the main.py
+d. Run the main.py
 #### 2.2.Problems and Errors
 tensorflow.python.framework.errors_impl.CancelledError: Session has been closed.
 May useful links about the description of this error:https://www.gitmemory.com/issue/GoogleCloudPlatform/cloudml-samples/331/501913732
