@@ -11,6 +11,8 @@ Geforce Titan X
 Ubuntu 16.04 LTS 64-bit
 ### 2.Running the code：
 #### 2.1.Main steps
+A. On a server machine
+
 a. Install anaconda3
 b. Bulid a "data" floder in the main code directory, and put the download dataset 'unmask' into 'data'.
 
@@ -19,6 +21,9 @@ c. Create a virtual Python environment 'unmask-rest'by :
 conda env create -f environment.yml
 ```
 d. Run the main.py
+
+B. Run loaclly
+When run the environment.yml file, it will come out some errors of certain packages. These packages should be changed to 'pip' in the yml file. But for hdf5-1.10.4-hb1b8bf9_0 package, it should be installed in the virtual environment seperatlly.
 #### 2.2.Problems and Errors
 tensorflow.python.framework.errors_impl.CancelledError: Session has been closed.
 
