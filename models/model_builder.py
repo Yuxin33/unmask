@@ -11,6 +11,7 @@ import torch.nn as nn
 # from models.resnet import resnet50
 from torchvision.models import resnet50, vgg16, densenet161, resnet101, densenet121
 
+from models.fd.resnet import resnet101 as resnet101_fd
 
 # https://gist.github.com/Fuchai/12f2321e6c8fa53058f5eb23aeddb6ab
 class GenHelper(data.Dataset):
@@ -89,6 +90,10 @@ class Model_Builder:
 
         elif model_type == 'resnet101':
             self.model = resnet101(pretrained=True)
+            self.model.fc = nn.Linear(2048, output)
+
+        elif model_type == 'resnet101_fd':
+            self.model = resnet101_fd(pretrained=True)
             self.model.fc = nn.Linear(2048, output)
 
         self.model.cuda()
