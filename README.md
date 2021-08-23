@@ -64,4 +64,6 @@ https://smartech.gatech.edu/handle/1853/60900
 #### 1. Data augmentation of model M
 #### 2. Architecture of model M
 
-![UnMask Framework](images/unmask.jpg)
+![New Architecture of M](images/modelM.png)
+#### 3. Results
+![The performance of New Architecture](images/resultgraph.PNG)
